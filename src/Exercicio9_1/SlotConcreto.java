@@ -19,8 +19,7 @@ public abstract class SlotConcreto implements Slot {
 		if (moeda.getValor() == VALOR) {
 			System.out.printf("moeda de %d aceita.\n", moeda.getValor());
 		} else if (this.slot != null) {
-			System.out.printf("não processo moedas de %d. Passando para %s\n",
-					VALOR, this.slot.getNomeSlot());
+			System.out.printf("não processo moedas de %d. Passando para %s\n", VALOR, this.slot.getNomeSlot());
 			this.slot.processar(moeda);
 		} else {
 			System.out.printf("moeda de %d é inválida.\n", moeda.getValor());

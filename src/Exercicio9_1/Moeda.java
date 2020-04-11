@@ -11,6 +11,7 @@ public class Moeda {
 		return valor;
 	}
 
+
 	public void setValor(int valor) {
 		this.valor = valor;
 	}
